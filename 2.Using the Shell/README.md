@@ -25,17 +25,19 @@ pret and manage commands was referred to as the **shell**.
       - To attempt to complete a value, type the first few characters and press **Tab**. Here are some of the values you can type partially from a bash shell: 
         
         - **Command, alias, or function** 
-          - If the text you type begins with regular characters, the shell tries to complete the text with a command, alias, or function name.
+          - If the text you type begins with regular characters, the shell tries to complete the text with a command, **alias**, or **function name**.
         
         - **Variable** 
-          - If the text you type begins with a dollar sign ($), the shell completes the text with a variable from the current shell.
+          - If the text you type begins with a dollar sign `($)`, the shell completes the text with a variable from the current shell.
         
         - **Username** 
           - If the text you type begins with a tilde (~), the shell completes the text with a username. As a result, `~username` indicates the home directory of the named user.
         
         - **Hostname** 
           - If the text you type begins with the at symbol `(@)`, the shell completes the text with a hostname taken from the `/etc/hosts` file.
-
+    ### 🔹Creating and using aliases
+      - Using the alias command, you can effectively create a shortcut to any command and options that you want to run later.  
+    
 
 
 
@@ -49,3 +51,10 @@ pret and manage commands was referred to as the **shell**.
 
 
 ▪️▫️◽️⚫️🟢⚪️◼️◾️1️⃣2️⃣3️⃣4️⃣♾➖➕➗🔺🔸🔻🔹🔶🔷
+
+                           ***⚪️**HOMEWORK**⚪️***
+
+1. Create aliases that It should be executable after reopening
+2. Using variables, find out **what your hostname**, **username**, **shell**, and home directories are currently set to.
+3. Run the date command in such a way that the output from that command produces the current day, month, date, and year. Have that read into another command line, resulting in text that appears like the following (your date, of course, will be different): **Bugun Juma, Sentabrning 19-sanasi, 2022-yil**.
+4. Create an alias called mypass that displays the contents of the `/etc/passwd` file on your screen in such a way that it is available every time you log in or open a new shell from your user account.
