@@ -8,10 +8,10 @@ pret and manage commands was referred to as the **shell**.
   - run programs, work with filesystems, 
   - compile computer code, and manage the computer.
 
-### 🔹 Using the shell prompt
-  - the default prompt for a regular user is simply a dollar sign: - **$**
-  - The default prompt for the **root** user is a pound sign (also called a number sign or a hash tag): - **#**
+    ### 🔹 Using the shell prompt
+        - the default prompt for a regular user is simply a dollar sign: - **$**
+        - The default prompt for the **root** user is a pound sign (also called a number sign or a hash tag): - **#**
 
-### 🔹 Using Shell Variables
+    ### 🔹 Using Shell Variables
 
 ▪️▫️◽️⚫️🟢⚪️◼️◾️1️⃣2️⃣3️⃣4️⃣♾➖➕➗🔺🔸🔻🔹🔶🔷
