@@ -10,15 +10,30 @@
 - Below that is a set of common directories in the Linux system, such as `bin`, `dev`, `home`, `lib`, and `tmp`, to `name` a `few`. 
 - Each of those directories, as well as directories added to the `root` directory, can contain subdirectories.
 
-**The Linux filesystem is organized as a hierarchy of directories.**
+  - **The Linux filesystem is organized as a hierarchy of directories.**
         ![](./../img/1.linux-file.png)
 
-    ### 🔹 Using the shell prompt
-      - the default prompt for a regular user is simply a dollar sign: - **$**
-      - The default prompt for the **root** user is a pound sign (also called a number sign or a hash tag): - **#**
+**************************************************
 
-    ### 🔹 Using Shell Variables
-      
-      - **Environment variables** are variables that are exported to any new shells opened from the current shell. Type env to see environment variables.
-      
-      - You can refer to the value of any of those variables by preceding it with a dollar sign `($)` and placing it anywhere on a command line. For example: -  ` echo $USER` 
+
+### 🔹Using Basic Filesystem Commands
+    
+    
+- **Commands to Create and Use Files**
+   - **cd**  -  Changes to another directory
+   - **pwd**  -  Prints the name of the current (or present) working directory
+   - **mkdir**  -  Creates a directory
+   - **chmod**  - Changes the permission on a file or directory
+   - **ls**  -  Lists the contents of a directory
+
+
+
+### 🔹 Using file-matching metacharacters
+
+- To save you some keystrokes and enable you to refer easily to a group of files, the bash shell lets you use **metacharacters**. 
+- Anytime you need to refer to a file or directory, such as to list, open, or remove it, you can use metacharacters to match the files you want. Here aresome useful metacharacters for matching filenames:
+
+
+  - **\*** -  Matches any number of characters.
+  - **?** - Matches any one character.
+  - **[...]** - Matches any one of the characters between the brackets, which can include a hyphen-separated range of letters or numbers.
