@@ -70,7 +70,7 @@
 - Here are a few examples of pattern matching with the question mark `(?)`:
 
     - `ls ????e`
-    - 
+
           apple grape
 
     - `ls g???e*`
@@ -88,3 +88,11 @@
 
          apple grape watermelon
             
+7. examplee
+- The following are some examples of command lines where information is directed to and from files:
+- 
+  - `cat /var/log/auth.log | grep "12:17:01" > demo.txt`
+
+  - `more demo.txt`
+   
+  - `echo "I finished the project on $(date)" >> ~/projects`
