@@ -45,13 +45,46 @@
    - `touch apple banana grape grapefruit watermelon`
 
 - The touch command creates empty files. The commands that follow show you how to use shell metacharacters with the ls command to match filenames. Try the following commands to see whether you get the same responses:
-  - `ls a*`
-        apple
-  - `ls g*`
-        grape grapefruit
-  - `ls g*t`
-        grapefruit
-  - `ls *e*`
-        apple grape grapefruit watermelon
-  - `ls *n*`
-        banana watermelon
+    - `ls a*`
+    - 
+          apple
+
+    - `ls g*`
+
+          grape grapefruit
+
+    - `ls g*t`
+
+          grapefruit
+
+    - `ls *e*`
+    - 
+          apple grape grapefruit watermelon
+
+    - `ls *n*`
+    - 
+          banana watermelon
+
+
+5. example
+- Here are a few examples of pattern matching with the question mark `(?)`:
+
+    - `ls ????e`
+    - 
+          apple grape
+
+    - `ls g???e*`
+
+          grape grapefruit
+
+6. example
+- The following examples use braces to do pattern matching:
+  
+  - `ls [abw]*`
+  
+         apple banana watermelon
+  
+  - `ls [agw]*[ne]`
+
+         apple grape watermelon
+            

@@ -37,3 +37,12 @@
   - **\*** -  Matches any number of characters.
   - **?** - Matches any one character.
   - **[...]** - Matches any one of the characters between the brackets, which can include a hyphen-separated range of letters or numbers.
+
+### 🔹 Using file-redirection metacharacters
+
+- Commands receive data from **standard input** and send it to **standard output**. 
+- Using **pipes** (described earlier), you can direct standard output from one command to the standard input of another.
+- With files, you can use **less than** `(<)` and **greater than** `(>)` signs to direct data to and from files. Here are the file-redirection characters
+
+  - **`<`**  -  Directs the contents of a file to the command. In most cases, this is the default action expected by the command and the use of the character is optional; using less bigfile is the same as less < bigfile.
+  - **`>`**  -  Directs the standard output of a command to a file. If the file exists, the content of that file is overwritten.
