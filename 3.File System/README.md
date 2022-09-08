@@ -57,15 +57,15 @@
 ### 🔹Using brace expansion characters
 - By using curly braces `({})`, you can expand out a set of characters across `filenames`, `directory names`, or other arguments to which you give commands.
 
-- `touch memo{1,2,3,4,5}`
-- `ls`
+  - `touch memo{1,2,3,4,5}`
+  - `ls`
 
 
-- `touch {John,Bill,Sally}-{Breakfast,Lunch,Dinner}`
-- `ls`
-- `rm -f {John,Bill,Sally}-{Breakfast,Lunch,Dinner}`
-- `touch {a..f}{1..5}`
-- `ls`
+  - `touch {John,Bill,Sally}-{Breakfast,Lunch,Dinner}`
+  - `ls`
+  - `rm -f {John,Bill,Sally}-{Breakfast,Lunch,Dinner}`
+  - `touch {a..f}{1..5}`
+  - `ls`
 
 
 ### 🔹Understanding File Permissions and Ownership
@@ -83,7 +83,24 @@
     - `s` - (for a socket),
     - `p` - (for a named pipe).
 
+### 🔹Setting Read, Write, and Execute Permissions
+  - **Read**  ◾️  View what’s in the file. See what files and subdirectories it contains.
+
+  - **Write** ◾️  Change the file’s content, rename it, or delete it. Add files or subdirectories to the directory.Remove files or directories from the directory.
+
+  - **Execute** ◾️  Run the file as a program. Change to the directory as the current directory, search through the directory, or execute a program from the directory. Access file metadata (file size, time stamps, and so on) of files in that directory.
 
 
+### 🔹Changing permissions with chmod (numbers)
+- If you own a file, you can use the chmod command to change the permission on it as you please. In one method of doing this, each permission (`read, write, and execute`) is assigned a 
+  - number — 
+    - r=4, 
+    - w=2, and 
+    - x=1
+  - —and you use each set’s total number to establish the (ex8)
 
 
+### 🔹Changing permissions with chmod (letters)
+- You can also turn file permissions on and off using plus `(+)` and minus `(–)` signs, respectively, along with letters to indicate what changes and for whom. 
+- Using letters, for each file you can change permission for the user `(u)`, group `(g)`, other `(o)`, and all users `(a)`.
+- What you would change includes the read `(r)`, write `(w)`, and execute `(x)` bits. For example, start with a file that has all permissions open (rwxrwxrwx). Run the following chmod commands using minus sign options. The resulting permissions are shown to the right of each command.
